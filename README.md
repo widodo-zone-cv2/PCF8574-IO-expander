@@ -1,2 +1,64 @@
 # PCF8574-IO-expander
 Remote 8-bit I/O expander for  I2C-bus
+
+
+<table>
+  <thead>
+    <tr>
+      <th>A0</th>
+      <th>A1</th>
+      <th>A2</th>
+      <th>ADDR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0x20</td>
+    </tr>
+     <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0x21</td>
+    </tr>
+     <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0x22</td>
+    </tr>
+     <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0x23</td>
+    </tr>
+     <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0x24</td>
+    </tr>
+     <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0x25</td>
+    </tr>
+     <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0x26</td>
+    </tr>
+     <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0x27</td>
+    </tr>
+  </tbody>
+</table>
