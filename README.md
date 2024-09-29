@@ -5,18 +5,19 @@ Library ini dirancang untuk memudahkan penggunaan ekspander GPIO PCF8574 yang be
 Dengan menggunakan library ini, Anda dapat dengan mudah mengatur mode input dan output untuk setiap pin, serta membaca dan menulis data ke pin tersebut tanpa perlu menggunakan library pihak ketiga. Library ini dirancang untuk mengelola pengaturan input dengan pull-up bawaan dari PCF8574, serta mengendalikan pin output secara efektif.
 
 ## Fitur
-Mengelola hingga 8 pin GPIO melalui bus I2C.
-Dukungan untuk mode input, input dengan pull-up, dan output.
-Pembacaan status pin dalam mode input.
-Penulisan status pin dalam mode output.
-Operasi menggunakan protokol I2C standar, sehingga dapat digunakan dengan berbagai platform mikrokontroler.
-Spesifikasi PCF8574
-Protokol I2C: Berkomunikasi dengan mikrokontroler melalui bus I2C.
-8-bit I/O: Menyediakan 8 pin yang dapat dikonfigurasi sebagai input atau output.
-Pull-up Internal: Pada mode input, PCF8574 memiliki resistor pull-up internal yang membuat pin secara default berada pada kondisi HIGH.
-Tegangan Operasional: 2.5V hingga 6V.
-Sink Current: Mampu menarik arus hingga 25mA pada pin output.
-Alamat I2C: Dapat dikonfigurasi melalui 3 pin alamat, memungkinkan hingga 8 perangkat PCF8574 terhubung pada satu bus I2C.
+- Mengelola hingga 8 pin GPIO melalui bus I2C.
+- Dukungan untuk mode input, input dengan pull-up, dan output.
+- Pembacaan status pin dalam mode input.
+- Penulisan status pin dalam mode output.
+- Operasi menggunakan protokol I2C standar, sehingga dapat digunakan dengan berbagai platform mikrokontroler.
+
+## Spesifikasi PCF8574
+- Protokol I2C: Berkomunikasi dengan mikrokontroler melalui bus I2C.
+- 8-bit I/O: Menyediakan 8 pin yang dapat dikonfigurasi sebagai input atau output.
+- Pull-up Internal: Pada mode input, PCF8574 memiliki resistor pull-up internal yang membuat pin secara default berada pada kondisi HIGH.
+- Tegangan Operasional: 2.5V hingga 6V.
+- Sink Current: Mampu menarik arus hingga 25mA pada pin output.
+- Alamat I2C: Dapat dikonfigurasi melalui 3 pin alamat, memungkinkan hingga 8 perangkat PCF8574 terhubung pada satu bus I2C.
 Konfigurasi alamat I2C:
 <table>
   <thead>
@@ -82,9 +83,9 @@ Konfigurasi alamat I2C:
 ## Instalasi
 Untuk menggunakan library ini, Anda dapat menyalin file header dan implementasi ke dalam proyek Anda, atau ikuti langkah-langkah di bawah ini untuk mengintegrasikannya ke dalam Arduino IDE:
 
-Unduh file ZIP dari repository GitHub ini.
-Buka Arduino IDE, dan pilih Sketch -> Include Library -> Add .ZIP Library.
-Pilih file ZIP yang diunduh dan library akan ditambahkan ke Arduino IDE.
+1. Unduh file ZIP dari [repository GitHub ini](https://github.com/widodo-zone-cv2/PCF8574-IO-expander).
+2. Buka Arduino IDE, dan pilih Sketch -> Include Library -> Add .ZIP Library.
+3. Pilih file ZIP yang diunduh dan library akan ditambahkan ke Arduino IDE.
 ## Penggunaan
 1. Inisialisasi
 Pertama, inisialisasi objek PCF8574 dengan alamat I2C perangkat:
