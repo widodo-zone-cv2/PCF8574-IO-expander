@@ -1,7 +1,7 @@
 #include <Wire.h>
-#include "PCF8574.h"
+#include "PCF8574-IO-EXPANDER.h"
 
-PCF8574 pcf(0x20);  // Inisialisasi dengan alamat I2C 0x20
+PCF8574_IO_EXPANDER pcf(0x20);  // Inisialisasi dengan alamat I2C 0x20
 
 void setup() {
   pcf.begin();
